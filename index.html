@@ -1,0 +1,208 @@
+<html>
+  <link rel="icon" href="./images/log.ico" type="image/x-icon">
+
+
+<head>
+  <title>樂樂拉麵菜單</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+
+  h1 {
+      margin-bottom: 0;
+    }
+
+    .content {
+      padding-left: 0;
+    }
+
+    .sidebox {
+      padding-left: 0;
+    }
+
+    .page-header {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .no-pad {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* 標籤不用.body */
+    body{ 
+      margin: 0;
+      padding: 0; 
+    }
+
+    div {
+      margin: 0;
+      padding: 0; 
+    }
+ 
+  /* 背景圖片考慮要不要用 */
+  /* body {
+	background: url(./images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+  } */
+  </style>
+</head>
+
+<body class="">
+
+    <div class="page-header; container">
+      <h1 align="center" style="color: rgb(206, 171, 88); background-color: black; top: 50%; font-size: 57;"> <a href="./Home.html"><img src="./images/log_01.png" width="110" alt="dd"/></a> <strong>樂樂拉麵菜單</strong>
+      <br>    
+        <p align="right" style="font-size: 27;"><a href="./Home.html">首頁</agn=>&nbsp;&nbsp;<a href="./traffic.html">交通資訊</a></p>
+        <div style="float: right; cursor: pointer;">
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+        </div>
+      </h1>
+    </div>
+
+  <!-- <button type="addNewProduct" name="addNewProduct" id="addNewProduct">Add New Product</button> -->
+  <br><br>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="./images/img_1.jpg" width="270px" height="270px">
+      <br>
+      柚子拉麵 - <strong>$270</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="1" data-name="柚子拉麵" data-summary="summary 1" data-price="270" data-quantity="1" data-image="images/img_1.jpg">加入購物車</button>
+      <a href="./item01.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="./images/img_2.jpg" width="270px" height="270px">
+      <br>
+      柚子醬油拉麵 - <strong>$270</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="2" data-name="柚子醬油拉麵" data-summary="summary 2" data-price="270" data-quantity="1" data-image="images/img_2.jpg">加入購物車</button>
+      <a href="./item02.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="./images/img_3.jpg" width="270px" height="270px">
+      <br>
+      鹽味拉麵 - <strong>$250</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="3" data-name="鹽味拉麵" data-summary="summary 3" data-price="250" data-quantity="1" data-image="images/img_3.jpg">加入購物車</button>
+      <a href="./item03.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="./images/img_4.jpg" width="270px" height="270px">
+      <br>
+      醬油拉麵 - <strong>$250</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="4" data-name="醬油拉麵" data-summary="summary 4" data-price="250" data-quantity="1" data-image="images/img_4.jpg">加入購物車</button>
+      <a href="./item04.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+
+    <div class="col-md-4 text-center">
+      <img src="./images/img_5.jpg" width="270px" height="270px">
+      <br>
+      柚子辣紅拉麵 - <strong>$285</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="5" data-name="柚子辣味拉麵" data-summary="summary 5" data-price="285" data-quantity="1" data-image="images/img_5.jpg">加入購物車</button>
+      <a href="./item05.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+    
+    <div class="col-md-4 text-center">
+      <img src="./images/img_6.jpg" width="270px" height="270px">
+      <br>
+      大雷神-柚子激辣拉麵 - <strong>$330</strong>
+      <br>
+      <button class="btn btn-warning my-cart-btn btn-lg" data-id="6" data-name="大雷神-柚子激辣拉麵" data-summary="summary 5" data-price="330" data-quantity="1" data-image="images/img_6.jpg">加入購物車</button>
+      <a href="./item06.html" class="btn btn-info btn-lg">詳細資訊</a>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top,
+        left: position.left
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: '$',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [
+        // {id: 1, name: '柚子拉麵', summary: 'summary 1', price: 10, quantity: 1, image: 'images/img_1.jpg'},
+        // {id: 2, name: '柚子醬油拉麵', summary: 'summary 2', price: 20, quantity: 2, image: 'images/img_2.jpg'},
+        // {id: 3, name: '鹽味拉麵', summary: 'summary 3', price: 30, quantity: 1, image: 'images/img_3.jpg'}
+      ],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $catotalrtIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+        $.each(products, function(){
+          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+        });
+        alert(checkoutString)
+        alert("點餐成功，請至櫃台結帳")
+        console.log("checking out", products, totalPrice, totalQuantity);
+        // 彈出視窗參考D:\OneDrive\文件\Java\BootStrap\60_Components\45_modal.html
+      },
+      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+        console.log("calculating discount", products, totalPrice, totalQuantity);
+        return totalPrice * 0.95;
+      }
+    });
+
+    $("#addNewProduct").click(function(event) {
+      var currentElementNo = $(".row").children().length + 1;
+      $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+    });
+  });
+  </script>
+
+</body>
+
+</html>

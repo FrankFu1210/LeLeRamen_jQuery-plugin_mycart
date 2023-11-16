@@ -1,0 +1,155 @@
+<html>
+  <link rel="icon" href="./images/log.ico" type="image/x-icon">
+
+<head>
+  <title>樂樂拉麵交通資訊</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .badge-notify {
+      background: red;
+      position: relative;
+      top: -20px;
+      right: 10px;
+    }
+
+    .my-cart-icon-affix {
+      position: fixed;
+      z-index: 999;
+    }
+
+    .box_inline-block {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+      background-color: yellow;
+      display: inline-block;
+    }
+
+.flex-container {
+  display: flex;
+  height: 500px;
+  padding: 0px;
+  /* background-color: #526E89; */
+  flex-direction:row;
+
+  flex-wrap: wrap;
+  /* // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around; */
+  justify-content: center;
+  
+  /* // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around | stretch */
+  align-content: flex-start;
+}
+
+h1 {
+      margin: 0;
+    }
+
+    .content {
+      padding-left: 0;
+    }
+
+    .sidebox {
+      padding-left: 0;
+    }
+
+    .page-header {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .no-pad {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* 標籤不用.body */
+    body{ 
+      margin: 0;
+      padding: 0; 
+    }
+
+    div {
+      margin: 0;
+      padding: 0; 
+    }
+
+.item1 {
+  width: 50%;
+  background-color: #E9FF66;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  color: #526E89;
+  font-size: 2rem;
+  padding:10px;
+}
+
+.item2 {
+  width: 50%;
+  display: flex;
+  /* background-color: #E9FF66; */
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  /* color: #526E89; */
+  font-size: 2rem;
+  padding:10px;
+}
+
+    /* 背景圖片考慮要不要用 */
+    /* body {
+	background: url(./images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+  } */
+  </style>
+</head>
+
+<body class="">
+
+  <div class="page-header">
+    <h1 align="center" style="color: rgb(206, 171, 88); background-color: black; top: 50%; font-size: 57;"> <a
+        href="./Home.html"><img src="./images/log_01.png" width="110" alt="dd" /></a> <strong>交通資訊</strong>
+      <br>
+      <p align="right" style="font-size: 27;"><a href="./Home.html">首頁</agn=>&nbsp;&nbsp;<a href="./index.html">菜單</a>
+      </p>
+      <!-- <div style="float: right; cursor: pointer;">
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+        </div> -->
+    </h1>
+  </div>
+
+  <!-- <button type="addNewProduct" name="addNewProduct" id="addNewProduct">Add New Product</button> -->
+
+  <!-- display inline block / flex -->
+  <div class="flex-container">
+    <div class="item1">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6040248012596!2d120.64844997534838!3d24.150540478399446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d964fff6dc5%3A0x5d526ce61b5b9ca6!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5YWs55uK6Lev5LqM5q61NTHomZ8!5e0!3m2!1szh-TW!2stw!4v1699932654193!5m2!1szh-TW!2stw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="item2">
+      <p class="text-box">
+        地址: 408台中市南屯區公益路二段51號1F<br>
+        電話: 04 2326 5860<br>
+        營業時間: 星期一 公休<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星期二 公休<br>
+        星期三 11:00-15:00 17:00-20:00<br>
+        星期四 11:00-15:00 17:00-20:00<br>
+        星期五 11:00-15:00 17:00-20:00<br>
+        星期六 11:00-15:00 17:00-21:00<br>
+        星期日 11:00-15:00 17:00-21:00</p>
+    </div>
+    <!-- < style="width: 40%; display: inline-flex"> -->
+    <br><br><br>
+      <img src="./images/map.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

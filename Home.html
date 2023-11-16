@@ -1,0 +1,170 @@
+<html>
+
+<head>
+  <title>樂樂拉麵</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/bootstrap.bundle.js"></script>
+  <link rel="icon" href="./images/log.ico" type="image/x-icon">
+
+  <style>
+    .badge-notify {
+      background: red;
+      position: relative;
+      top: -20px;
+      right: 10px;
+    }
+
+    .my-cart-icon-affix {
+      position: fixed;
+      z-index: 999;
+    }
+
+    .carousel-item>img {
+      /* 謹慎條件，才不會選到其他元素 */
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      /* 讓圖片不要變形 */
+    }
+ 
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .content {
+      padding-left: 0;
+    }
+
+    .sidebox {
+      padding-left: 0;
+    }
+
+    .page-header {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .no-pad {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* 標籤不用.body */
+    body{ 
+      margin: 0;
+      padding: 0; 
+    }
+
+    div {
+      margin: 0;
+      padding: 0; 
+    }
+
+    /* 背景圖片考慮要不要用 */
+    /* body {
+	background: url(./images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+  } */
+  </style>
+</head>
+
+<!-- body class="container" 類別選擇器(container)等級較高 -->
+<body class="">
+
+  <div class="page-header">
+    <h1 align="center" style="color: rgb(206, 171, 88); background-color: black; top: 50%; font-size: 57;"> <a
+        href="./index.html"><img src="./images/log_01.png" width="110" alt="dd" /></a> <strong>樂樂拉麵</strong>
+      <br>
+      <p align="right" style="font-size: 27;"><a href="./index.html">菜單</agn=>&nbsp;&nbsp;<a
+            href="./traffic.html">交通資訊</a></p>
+      <!-- <div style="float: right; cursor: pointer;">
+          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+        </div> -->
+    </h1>
+  </div>
+
+  <!-- <button type="addNewProduct" name="addNewProduct" id="addNewProduct">Add New Product</button> -->
+  <marquee align="midden" direction="right" height="30" scrollamount="8" behavior="alternate" style='color:white;'>
+    <p id="demo">
+      <font size="4" style="background:red" strong>今天我想來點</font>
+    </p>
+  </marquee>
+  <!-- <marquee align="midden" scrolldelay='' width='100%' bgColor='' behavior='alternate' direction='' style='color:white; background-color: red;' height='50px'>今天我想來點</marquee> -->
+
+  <script>
+    var Today = new Date();
+    if (5 > Today.getHours() || Today.getHours() > 0) {
+      result = '今天晚餐';
+    } else if (20 > Today.getHours() || Today.getHours() >= 5) {
+      result = '今天晚餐';
+    } else {
+      result = '明天午餐';
+    }
+
+    // document.getElementById('demo').innerText = result + "我想來點";
+    document.querySelector('#demo > font').innerHTML = result + "我想來點";
+
+    // 解決JS font size解法參考https://stackoverflow.com/questions/37957815/how-to-modify-innerhtml-text
+    // document.getElementById("demo").innerHTML = '<font size="5">New text</font>'; 或
+    // document.querySelector('#demo > font').innerHTML = "New Text";
+
+  </script>
+
+  <!-- 參考D:\OneDrive\文件\Java\JavaScript\10_JavaScript\31_head_or_body_getElement.html -->
+  <br><br><br>
+  <div class="container">
+    <!-- 10. 將第二張圖片改為顯示 ../_image/sunny.jpg，查看畫面效果 -->
+
+    <!-- 20. 該如何做讓圖片正常顯示？(img class="img-fluid") -->
+    <div id="apple" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#apple" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner;" style="text-align: center">
+        <div class="carousel-item active">
+          <a href="./item01.html"><img class="img-fluid" src="./images/img_1.jpg" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./item02.html"><img class="img-fluid" src="./images/img_2.jpg" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./item03.html"><img class="img-fluid" src="./images/img_3.jpg" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./item04.html"><img class="img-fluid" src="./images/img_4.jpg" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./item05.html"><img class="img-fluid" src="./images/img_5.jpg" alt=""></a>
+        </div>
+        <div class="carousel-item">
+          <a href="./item06.html"><img class="img-fluid" src="./images/img_6.jpg" alt=""></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#apple" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
